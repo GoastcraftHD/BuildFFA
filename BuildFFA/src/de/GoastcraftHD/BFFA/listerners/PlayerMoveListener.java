@@ -38,6 +38,8 @@ public class PlayerMoveListener implements Listener {
 				player.getInventory().setItem(i, item);
 				i++;
 			}
+		} else if (player.getLocation().getBlockY() > Main.getPlugin().getConfig().getInt("PvPHeight")) {
+			player.getInventory().clear();
 		}
 		
 		if (player.getLocation().getBlockY() < Main.getPlugin().getConfig().getInt("DeathHeight")) {
