@@ -48,7 +48,8 @@ public class PlayerMoveListener implements Listener {
 										  Main.getPlugin().getConfig().getInt("SpawnPoint.yaw"),
 										  Main.getPlugin().getConfig().getInt("SpawnPoint.pitch"));
 			player.teleport(spawn);
-			
+			player.setHealth(20);
+			player.setFoodLevel(20);
 			player.getInventory().clear();
 		}
 	}
