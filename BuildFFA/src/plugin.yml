@@ -1,0 +1,12 @@
+main: de.GoastcraftHD.BFFA.main.Main
+name: BuildFFA
+author: GoastcraftHD
+version: 0.1.0
+
+commands:
+   setDeathHeight:
+      description: Sets the height from were the player will die.
+   setPvPHeight:
+      description: Sets the height from were the player is allowed to PvP.
+   setSpawnPoint:
+      description: Sets the spawn point.
